@@ -37,7 +37,7 @@ class Landing extends Component {
     
   render() {
 
-    var { isLoaded, politicians } = this.state;
+    const { isLoaded, politicians } = this.state;
     if (!isLoaded) {
         return <div>loading...</div>
     } else {

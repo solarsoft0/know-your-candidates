@@ -17,7 +17,7 @@ class Candidate extends React.Component{
          
               <div className="pricingTable">  
                   <span className="pricing-icon">
-                  <img src= {image} alt={name} />
+                  <img src={image} alt={name} />
                  </span>
                   <h5 className="py-3 m-0 text-primary">{name}</h5>                                    
                   <p></p>
