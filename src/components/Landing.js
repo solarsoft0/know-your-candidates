@@ -19,17 +19,18 @@ class Landing extends Component {
     }
 
     componentDidMount() {
-        fetch('https://civicmonitor.herokuapp.com/api/v2/politicians/')
-          .then((res) => res.json()) // It resolves the promise with a JSON object
-          .then((res) => {
-            console.log(res.data);
+        fetch("https://civicmonitor.herokuapp.com/api/v2/politicians")
+        .then((res)=>res.json())
+        .then((res)=> {
+            console.log(res.data)
             this.setState({
                 isLoaded: true,
               politicians: res.data
             })
-          })
+        })
       }
 
+      
   
 
   
