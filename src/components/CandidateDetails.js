@@ -5,7 +5,12 @@ import Header from './Header';
 // import { Link } from "@reach/router";
 import {Image} from 'cloudinary-react';
 
-
+const imageStyle = {
+    width: "200px",
+    height: "200px",
+    borderRadius: "100%",
+    border: "3px solid #fff"
+  };
 
 class CandidateDetails extends React.Component{
     render(){
@@ -25,6 +30,7 @@ class CandidateDetails extends React.Component{
                         <div className="row">
                             <div className="col-lg-12 mx-auto d-flex justify-content-center">
                                 <div className="home-title text-center align-self-center">
+                                <Image cloudName="civic-monitor" publicId={image} style={imageStyle} crop="scale"/>
                                     <h1 className="pt-2">{name}</h1>
                                    
                                     <div>
@@ -45,20 +51,7 @@ class CandidateDetails extends React.Component{
                 <div className="container">
 
                     <div className="row">
-                        <div className="col-md-12 col-lg-4">
-                            <div className="card pricing-card">
-                                <div className="card-body">
-                                    <div className="pricingTable">  
-                                        <span className="pricing-icon">
-                                        <Image cloudName="civic-monitor" publicId={image} width="300" height="200" crop="scale"/>
-                                        </span>
-                                        <h5 className="py-3 m-0 text-primary">{name}</h5>                                    
-                                  
-                                    
-                                    </div>
-                                </div>
-                            </div>                                    
-                        </div>
+                      
 
                         <div className="col-md-12 col-lg-8">
                             <div className="card pricing-card">
