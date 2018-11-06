@@ -3,6 +3,7 @@ import Header from './Header';
 // import Candidate from './Candidate';
 // import firebase from '../firebase';
 // import { Link } from "@reach/router";
+import {Image} from 'cloudinary-react';
 
 
 
@@ -49,7 +50,7 @@ class CandidateDetails extends React.Component{
                                 <div className="card-body">
                                     <div className="pricingTable">  
                                         <span className="pricing-icon">
-                                            <img src={image} alt={name} />
+                                        <Image cloudName="civic-monitor" publicId={image} width="300" height="200" crop="scale"/>
                                         </span>
                                         <h5 className="py-3 m-0 text-primary">{name}</h5>                                    
                                   
