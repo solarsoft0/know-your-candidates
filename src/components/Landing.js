@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Candidate from './Candidate';
 import Search from './Search';
-// import axios from 'axios';
 
 
 

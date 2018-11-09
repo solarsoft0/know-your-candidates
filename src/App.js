@@ -46,6 +46,7 @@ componentDidMount() {
         <CandidateDetails  
           path="/details/:id"
           id={politician.id}
+          key={politician.id}
           name= {politician.name}
           image = {politician.image}
           family = {politician.family}
